@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+header {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+
+}
+
+
+header #logo span {
+    font-size: 1.8em;
+    line-height: 65px;
+    font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        padding-left: 15px;
+        padding-top: 12px;
+        width: 30%;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.2em;
+        text-align: left;
+        padding-left: 15%;
+    }
+}
+
+
+
+/* Адаптивное меню */
+body {
+    margin: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 12px;
+    overflow: hidden;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 22px;
+    line-height: 50px;
+
+}
+
+ul.topnav li a:hover {
+    background-color: rgba(206, 212, 57, 1);
+    background: transparent;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    ul.topnav li {
+        display: none;
+    }
+
+    ul.topnav li.icon {
+        float: center;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav.resposive {
+        position: relative;
+    }
+
+    ul.topnav.responsive li.icon {
+        position: relative;
+        left: 0px;
+        right: 0;
+        top: 0;
+    }
+
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+    z-index: 5000;
+    background-color: rgba(12, 12, 12, 0.8);
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #fff;
+}
+
+.fixed #about a {
+    color: #343434
+}
+
+.fixed #about a:hover {
+    color: #7c7c7c
+}
