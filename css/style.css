@@ -331,3 +331,94 @@ h3 {
         width: 80%;
     }
 }
+
+/* Information about me */
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+center {
+    text-align: center;
+}
+
+#about_me h1 {
+    padding-top: 30px;
+    font-size: 3em;
+}
+
+#inf_me {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin: 0px 200px 70px 200px;
+}
+
+
+
+@media (max-width: 800px) {
+    #inf_me {
+        font-size: 1.2em;
+        width: 99%;
+        margin: 0;
+    }
+}
+
+@media (min-width: 801px) {
+    #FAQ {
+        width: 100%;
+        float: left;
+    }
+}
+
+#Education h1,
+#Additional_education h1,
+#Professional_skills h1,
+#Likes h1,
+#Dislikes h1 {
+    padding-top: 30px;
+    font-size: 3em;
+}
+
+#education_inf,
+#Additional_education_inf,
+#Professional_skills_inf,
+#Likes_inf,
+#Dislikes_inf {
+    margin-top: 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin: 0px 200px 70px 200px;
+}
+
+@media(max-width: 800px) {
+
+    #education_inf,
+    #Additional_education_inf,
+    #Professional_skills_inf,
+    #Likes_inf,
+    #Dislikes_inf {
+        font-size: 1.2em;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #about_me h1,
+    #Education h1,
+    #Additional_education h1,
+    #Professional_skills h1,
+    #Likes h1,
+    #Dislikes h1 {
+        font-size: 2em;
+    }
+}
