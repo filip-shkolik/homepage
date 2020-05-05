@@ -1,316 +1,312 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Résumé</title>
-  <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <article>
-      <div class="page" style="border-color: midnightblue;">
-        <div class="stackable grid">
-          <div class="row">
-            <div class="three wide center aligned column">
-              <!-- Avatar -->
-            </div>
-            <div class="thirteen wide column">
-              <div class="stackable grid">
-                <div class="sixteen wide column">
-                  <!-- ...Contacts,name,job... -->
-                  <h1>Contacts</h1>
-                  <p>name,job</p>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>My resume &#128526;</span>
+    </div>
+    <ul class="topnav" id="myTopnav">
+      <li><a href="#" onclick="slowScroll('#skills')">Skills &#127891;</a></li>
+      <li><a href="#" onclick="slowScroll('#inf_me')">About me &#128519;</a></li>
+      <li><a href="#" onclick="slowScroll('#contact_gmail')">Contact &#9997;</a></li>
+      <li class="icon"><a href="javascript:void(0);" style="font-size: 25px;" onclick="myFunction()">&#9776;</a>
+      </li>
+    </ul>
+  </header>
+
+  <div id="top">
+    <div class="top_text">
+      <h1>Programming</h1>
+      <h3>as the meaning of life!</h3>
+    </div>
+    <img src="img/Photo.jpg" alt="" class="my_img" width="270px" height="290px">
+  </div>
+
+  <div id="main" class="wow fadeInDown">
+    <div id="skills">
+      <h1>Software Skills</h1>
+      <div class="skillBox">
+        <p>HTML5</p>
+        <p>50%</p>
+        <div class="skill">
+          <div class="skill_level" style="width:50%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>CSS3</p>
+      <p>50%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:50%"></div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>JQuery</p>
+      <p>10%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:10%"></div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>JavaScript</p>
+      <p>50%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:50%"></div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>Photoshop</p>
+      <p>40%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:40%"></div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>Dream be programming :)</p>
+      <p>100%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:100%"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="FAQ">
+    <div id="about_me" class="wow lightSpeedIn">
+      <h1>&#128526; About me &#128526;</h1>
+    </div>
+    <div id="inf_me" class="wow slideInUp">
+      <span>Hello &#128075;, my name is Philip &#128102;. I am 17 years old &#128118;, and now I am a student
+        at
+        the
+        Chernihiv
+        Polytechnic
+        National University &#127891;. My hobby is programming, I am very interested in this &#128064;. Now
+        I am
+        learning
+        a
+        programming language, like Java Script &#128151;. This language is in the top 10 programming
+        languages
+        ​​by
+        popularity &#128070;. Earlier, I studied HyperText Markup Language (HTML), Cascading Style Sheets
+        (CSS),
+        and a
+        little experience with Photoshop &#127890;. I have one more hobby - football &#9917;, but at the
+        moment
+        I can
+        not
+        do it &#128532;,
+        due to lack of time &#9203;. What about my character?&#128515; Sociable, responsive, purposeful,
+        assiduous,
+        diligent,
+        kind &#128519;. At the moment I want to study the Java Script libraries &#128083; &#127968;. I want
+        to
+        succeed in
+        programming &#128084; &#128565; &#128083; &#127942;. Thanks
+        for reading.&#128588; &#128075;</span>
+    </div>
+  </div>
+
+  <div id="Education" class="wow fadeInDown">
+    <h1>&#127891;Education&#127891;</h1>
+    <div id="education_inf" class="wow fadeInDown">
+      <span>
+        &#9989;2008 - 2019 - Secondary education.<br>
+        &#9989;2012 - 2018 - graduated from the Music School, specialty "Guitar".<br>
+        &#9989;September 2019 - National University of Chernihiv Polytechnic, specialty «№125 Cyber
+        Security».
+      </span>
+    </div>
+  </div>
+
+  <div id="Additional_education" class="wow fadeInDown">
+    <h1>&#127890;Additional education&#127890;</h1>
+    <div id="Additional_education_inf" class="wow fadeInDown">
+      <span>
+        &#9749;May 2019 - Online «Solo Learn» Courses - Javascript.<br>
+        &#9749;May 2020 - «Prometheus web development» online courses.
+      </span>
+    </div>
+  </div>
+
+  <div id="Professional_skills" class="wow fadeInDown">
+    <h1>&#127919;Professional skills&#127919;</h1>
+    <div id="Professional_skills_inf" class="wow fadeInDown">
+      <span>
+        &#10133;Competent written and oral language.<br>
+        &#10133;Web development skills. (HTML + CSS + Java Script. Superficial knowledge of Python,
+        PHP, C ++, C #.)<br>
+        &#10133;Knowledge of languages: Ukrainian - native; Russian - fluent; English - Intermediate;
+      </span>
+    </div>
+  </div>
+
+  <div id="Likes" class="wow fadeInDown">
+    <h1>&#128513;Likes&#128513;</h1>
+    <div id="Likes_inf" class="wow fadeInDown">
+      <span>
+        &#127775;Humor &#127917;, fillms &#127909;, dogs &#128576;, relax &#127940;, travel &#127754;, Spend
+        time with
+        friends &#128521;,
+        football &#127939;,
+        &#8372;money&#8372; &#128514;,
+        eat &#128527;&#127856;&#127843;
+      </span>
+    </div>
+  </div>
+
+  <div id="Dislikes" class="wow fadeInDown">
+    <h1>&#128530; Dislikes &#128530;</h1>
+    <div id="Dislikes_inf" class="wow fadeInDown">
+      <span>
+        &#128561; Smoking &#128574;,Alcohol &#128552;, series &#128547;, Politicts Racism &#128548;,
+        Reality-Shows &#128557; Hypocrisy &#128528;, Dota 2 &#128545;
+      </span>
+    </div>
+  </div>
+
+
+  <div id="contact" class="wow fadeInDown">
+    <h1>&#9996; Contacts &#9996;</h1>
+  </div>
+  <div id="all_contact">
+    <div id="contact_gmail" class="wow fadeInDown">
+      <p class="gmail">&#9993;My gmail&#9993; filip.shkolik228@gmail.com</p>
+    </div>
+    <div id="contact_discord" class="wow fadeInDown">
+      <p>&#9990;My discord&#9990; Ripsik#1139</p>
+    </div>
+    <div id="text_instagram" class="wow fadeInDown">
+      <p>&#128541;My instagram&#128541;</p>
+    </div>
+    <div id="contact_instagram" class="wow fadeInDown">
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/p/B7_Wymtg6Gu/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-version="12"
+        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+        <div style="padding:16px;"> <a
+            href="https://www.instagram.com/p/B7_Wymtg6Gu/?utm_source=ig_embed&amp;utm_campaign=loading"
+            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+            target="_blank">
+            <div style=" display: flex; flex-direction: row; align-items: center;">
+              <div
+                style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+              </div>
+              <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                <div
+                  style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
                 </div>
-                <div class="sixteen wide mobile only column">
-                  <div class="divider"></div>
-                </div>
-                <div class="sixteen wide column">
-                  <h2>Résumé</h2>
-                  <p>&mdash; I'm the most successful person ever to run for the presidency, by far. Nobody's ever been
-                    more successful than me. I'm the most successful person ever to run. Ross Perot isn't successful
-                    like me. Romney &mdash; I have a Gucci store that's worth more than Romney. Sorry losers and haters,
-                    but my IQ is one of the highest &mdash; and you all know it! Please don't feel so stupid or
-                    insecure, it's not your fault.</p>
+                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="sixteen wide column">
-              <div class="fat divider"></div>
+            <div style="padding: 19% 0;"></div>
+            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px"
+                viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                xmlns:xlink="https://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                    <g>
+                      <path
+                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg></div>
+            <div style="padding-top: 8px;">
+              <div
+                style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                Посмотреть эту публикацию в Instagram</div>
             </div>
-          </div>
-          <div class="row">
-            <div class="ten wide column">
-              <p>
-                EXPERIENCE
-                2017
-                Became 45th president of the United States
-
-                2016
-                Won election race with 77 votes more than Clinton, yippe-kee-yay!
-
-                2015
-                Became the most important Republican nominating for presidential election run
-
-                2009
-                Changed my mind and became Republican again
-
-                2005
-                Started Trump University with Michael Sexton and Jonathan Spitalny: no grades, certificates and other
-                bureaucracy, but program offered courses in real estate, asset management entrepreneurship, and wealth
-                creation. 98% students gave positive reviews while studying, however some of these ungrateful gringos
-                filed lawsuits against Trump University after the course. I had to pay $25 million to settle that...
-
-                2002
-                Acquired the former Hotel Delmonico, which was renovated and reopened in 2004 as the Trump Park Avenue.
-                I
-                sure do like my surname!
-
-                2001
-                Completed Trump World Tower and joined the Democratic Party
-
-                1999
-                Started buying golf courses. They are very cheap, I have 18 of them now in USA and abroad! Also switched
-                to the Reform Party that year
-
-                1997
-                Began a multi-building development along the Hudson River, which was named Trump Place. Me and the other
-                investors sold our shares for $1.8 billion and that was then the biggest residential sale in the history
-                of New York City
-
-                1996
-                Acquired the Bank of Manhattan Trust Building, which was a vacant seventy-one story skyscraper on Wall
-                Street. After an extensive renovation, the high-rise was renamed the Trump Building
-
-                1994
-                Refurbished the Gulf and Western Building on Columbus Circle, turned it into a 44-story luxury property
-                known as Trump International Hotel and Tower
-
-                1989 ― 1992
-                Ran a second hand airline called Trump Shuttle. What a waste of money, I had to sell it, now it is
-                American Airlines Shuttle, btw
-
-                1989, 1990
-                Learned about Tour de France and decided to hold my very own Tour de Trump. Is America not great enough
-                for that cycling competition?
-
-                1988
-                Acquired the Plaza Hotel in Manhattan for $407 million, invested $50 million to restore the building and
-                boosted it from three-star to four-star hotel (I called it "the Mona Lisa" and sold it for a lot of cash
-                in 1995)
-
-                1987
-                Registered as a Republican
-
-                1985
-                I bought the Mar-a-Lago estate in Palm Beach and turned it into a private club.You can join if you pay
-                $200K initiation fee (and there is another annual fee for members, it is very expensive to be rich).
-                That
-                year I also opened a casino called Trump Castle. My wife Ivana became a manager, because she is another
-                Trump!
-
-                1983
-                I purchased New Jersey Generals, an American football team. I changed team's play schedule and filed an
-                antitrust lawsuit against United States Football League, so NJG are not doing so good now, but back then
-                they were great!
-
-                1980
-                Started developing the Trump Tower skyscraper in Manhattan, I payed a crew of undocumented Polish
-                workers
-                to demolish the historic Bonwit Teller store, including art deco features. All this to make
-                architectural
-                critic Paul Goldberger say in 1983 that the tower's atrium is "the most pleasant interior public space
-                to
-                be completed in New York in some years". At the same time I also started a repair job on the Wollman
-                Rink
-                in Central Park and completed the work in three months for $1.95 million, which was $775,000 less than
-                the
-                initial budget!
-
-                1978
-                Purchased a 50 percent stake in the derelict Commodore Hotel and turned it into the Grand Hyatt Hotel in
-                2
-                years of remodeling
-
-                1971
-                Was promoted to president of the company and renamed it The Trump Organization
-
-                1968
-                Began my career at my father's real estate development company, Elizabeth Trump & Son
-
-                PERSONAL LIFE
-                2006
-                Melania gained United States citizenship and gave birth to our son, Barron
-
-                2005
-                Married her
-
-                1998
-                Met my future third wife, Melania Knauss
-
-                1999
-                Divorced Marla ¯_(ツ)_/¯
-
-                1993
-                Married Marla and had a daughter, we named her Tiffany, because I like Tiffany & Company jewellery as
-                well
-
-                1992
-                Started affair with Marla Maples, so I had to divorce. God knows I love nice women, I love them all!
-
-                1984
-                Birth of Eric Trump
-
-                1982
-                Birth of Ivanka Trump
-
-                1977
-                My first son is born. I called him Donald, of course!
-
-                1977
-                Married Czech model Ivana Zelníčková
-
-                MEDIA CAREER
-                2019
-                Was awarded Worst Actor and Worst Screen Combo at Golden Raspberry Awards for parts in "Death of a
-                Nation"
-                and "Fahrenheit 11/9"
-
-                2015
-                Published a book "Crippled America: How to Make America Great Again"
-
-                2011
-                Published a book "Time to Get Tough: Making America #1 Again" in coauthorship with Wynton Hall, Peter
-                Schweizer and Meredith McIver
-
-                2011
-                Published a book "Midas Touch: Why Some Entrepreneurs Get Rich – And Why Most Don't" in coauthorship
-                with
-                Robert Kiyosaki
-
-                2011
-                Published a book "Trump Tower" in coauthorship with Jeffrey Robinson
-
-                2009
-                Published a book "Think Like a Champion: An Informal Education in Business and Life" in coauthorship
-                with
-                Meredith McIver
-
-                2008
-                Published a book "Never Give Up: How I Turned My Biggest Challenges into Success" in coauthorship with
-                Meredith McIver
-
-                2007
-                Published a book "Think Big and Kick Ass" in coauthorship with Bill Zanker
-
-                2007
-                Received a star on the Hollywood Walk of Fame for being producer of Miss Universe pageant
-
-                2006
-                Published a book "Why We Want You to Be Rich" in coauthorship with Meredith McIver and Robert Kiyosaki
-
-                2006
-                Published a book "How to Build a Fortune: Your Plan for Success From the World's Most Famous
-                Businessman"
-
-                2006
-                Published a book "The Best Real Estate Advice I Ever Received: 100 Top Experts Share Their Strategies"
-
-                2006
-                Published a book "Trump 101: The Way to Success" in coauthorship with Meredith McIver
-
-                2005
-                Published a book "The Best Golf Advice I Ever Received"
-
-                2005
-                Performed a song with Megan Mullally at the 57th Primetime Emmy Awards
-
-                2004 ― 2008
-                Ran short-form talk radio program "Trumped!" (one to two minutes on weekdays)
-
-                2004
-                Published a book "Trump: How to Get Rich" in coauthorship with Meredith McIver
-
-                2004
-                Published a book "The Way to the Top: The Best Business Advice I Ever Received"
-
-                2004
-                Published a book "Think Like a Billionaire: Everything You Need to Know About Success, Real Estate, and
-                Life" in coauthorship with Meredith McIver
-
-                2003 ― 2015
-                Produced NBC reality shows "The Apprentice" and "The Celebrity Apprentice"
-
-                2000
-                Published a book "Trump: The America We Deserve" in coauthorship with Dave Shiflett
-
-                1997
-                Published a book "Trump: The Art of the Comeback" in coauthorship with Kate Bohner
-
-                1991
-                Was awarded Worst Supporting Actor at Golden Raspberry Awards for a part in "Ghosts Can't Do It"
-
-                1990
-                Published a book "Trump: Surviving at the Top" in coauthorship with Charles Leerhsen
-
-                1987
-                Published a book "Trump: The Art of the Deal" in coauthorship with Tony Shwartz
-
-                EDUCATION
-                2011
-                Asked friends who are prominent and wealthy alumni of the New York Military Academy to secure my
-                academic
-                records so they could not be seen by anyone, never!
-
-                1966
-                Transferred to the Wharton School of the University of Pennsylvania and graduated in May 1968 with a
-                B.S.
-                in economics
-
-                1964
-                Started studying in Fordham University
-
-                1959
-                Enrolled in the New York Military Academy, a private boarding school, after my parents discovered I made
-                frequent trips into Manhattan without their permission
-              </p>
+            <div style="padding: 12.5% 0;"></div>
+            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+              <div>
+                <div
+                  style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                </div>
+                <div
+                  style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                </div>
+                <div
+                  style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                </div>
+              </div>
+              <div style="margin-left: 8px;">
+                <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                </div>
+                <div
+                  style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                </div>
+              </div>
+              <div style="margin-left: auto;">
+                <div
+                  style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                </div>
+                <div
+                  style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                </div>
+                <div
+                  style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                </div>
+              </div>
             </div>
-            <div class="six wide column">
-              <p>
-                LANGUAGES
-                🇺🇸 ENGLISH 🇷🇺 РУССКИЙ
-
-                SKILLS
-                NEGOTIATING COUNTING REMODELING WRITING ACING SINGING REPORTING INCORPORATING SELLING ADVERTISING
-                HOSTING COMPETING TWITTING PARENTING GAMBLING DATING SUING ORGANIZING FUNDING DEBATING ADVISING
-                PRESBYTERIANING
-
-                CHARACTER
-                ADJUSTED CALM AMBITIOUS COMPETITIVE SOCIABLE DIRECT HOSTILE CARELESS IGNORANT INQUISITIVE BOLD CONFIDENT
-                MISCHIEVOUS CHARMING INTERESTING DARING COLORFUL LAZY SELF-PROMOTING
-
-                LIKES 😃
-                BILLIONS FILET-O-FISH BIG MAC CHINA QUARTER POUNDER DIET COKE TARIFFS BIBLE ARTOF DEAL PATRIOTS
-                BEAUTIFUL MODELS GOLD REAL ESTATE WAR PROTESTERS CONSTRUCTION RUSSIANS BANKS SPORTS WOMEN MEXICO RED HAT
-                KOREANS GOLF EVERYBODY [1] [2]
-
-                DISLIKES 😞
-                DOGS MEDIA CNN GERMANS MEXICANS IMMIGRANTS SHITHOLE COUNTRIES UNATTRACTIVE WOMEN BLACKS SUSHI HOT-DOGS
-                ALCOHOL FRUIT CHRISTMAS PARTIES LIBERALS
-
-                WANTS 🥺
-                BE HEALTHY GROW A TREE BUILD TRUMP AIRPORT HAVE A TASTE DO A HARLEM SHAKE IN CONGRESS TO GOLF MORE OFTEN
-                WIN ALL THE COURT SUITS
-              </p>
+            <div
+              style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+              <div
+                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+              </div>
+              <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+              </div>
             </div>
-          </div>
+          </a>
+          <p
+            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+            <a href="https://www.instagram.com/p/B7_Wymtg6Gu/?utm_source=ig_embed&amp;utm_campaign=loading"
+              style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+              target="_blank">Публикация от Филип Школик (@ripsik_228)</a> <time
+              style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
+              datetime="2020-01-31T15:59:48+00:00">31 Янв 2020 в 7:59 PST</time></p>
         </div>
-      </div>
-    </article>
-  </main>
+      </blockquote>
+    </div>
+  </div>
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+
+    }
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if ($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
 </body>
 
 </html>
