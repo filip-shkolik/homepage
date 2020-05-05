@@ -17,7 +17,7 @@ body {
     font-family: Trebuchet MS, Helvetica;
 }
 
-/* Шапка сайта */
+/* Site header */
 
 header {
     width: 100%;
@@ -69,7 +69,7 @@ header #logo span {
 
 
 
-/* Адаптивное меню */
+/* Responsive menu */
 body {
     margin: 0;
 }
@@ -140,7 +140,7 @@ ul.topnav li.icon {
     }
 }
 
-/* Стили для фиксированной шапки */
+/* Fixed Hat Styles */
 
 .fixed {
     z-index: 5000;
@@ -158,4 +158,79 @@ header.fixed #logo {
 
 .fixed #about a:hover {
     color: #7c7c7c
+}
+
+/* Main unit */
+
+#top {
+    width: 100%;
+    background-image: url(https://99px.ru/sstorage/53/2017/12/tmb_214802_877578.jpg);
+    background-blend-mode: multiply;
+    background-color: #5f7c94;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+#top .my_img {
+    border-radius: 80px;
+    margin-top: 20px;
+
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    #top {
+        font-size: 1.5em;
+        padding-top: 30%;
+        height: 700px;
+    }
+}
+
+@media (max-width: 450px) {
+    #top {
+        font-size: 1.4em;
+    }
+}
+
+#top h1 {
+    padding-top: 20%;
+}
+
+#top h3 {
+    color: #ccc;
+}
+
+#top h1,
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur .95s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+#top h1,
+h3 {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
