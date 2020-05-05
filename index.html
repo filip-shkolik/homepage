@@ -31,7 +31,82 @@
     <img src="img/Photo.jpg" alt="" class="my_img" width="270px" height="290px">
   </div>
 
+  <div id="main" class="wow fadeInDown">
+    <div id="skills">
+      <h1>Software Skills</h1>
+      <div class="skillBox">
+        <p>HTML5</p>
+        <p>50%</p>
+        <div class="skill">
+          <div class="skill_level" style="width:50%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>CSS3</p>
+      <p>50%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:50%"></div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>JQuery</p>
+      <p>10%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:10%"></div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>JavaScript</p>
+      <p>50%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:50%"></div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>Photoshop</p>
+      <p>40%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:40%"></div>
+      </div>
+    </div>
+    <div class="skillBox">
+      <p>Dream be programming :)</p>
+      <p>100%</p>
+      <div class="skill">
+        <div class="skill_level" style="width:100%"></div>
+      </div>
+    </div>
+  </div>
 
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+
+    }
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if ($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
 </body>
 
 </html>
